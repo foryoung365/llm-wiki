@@ -1,0 +1,16 @@
+Priority,Epic,Task,Target,Dependency,Status
+P0,Repo bootstrap,建立目录结构、模板、index、log、AGENTS、templates/README,Done,,Completed
+P0,Docs alignment,统一 README、ARCHITECTURE、EXECUTION_PLAN、state/README 口径,Done,Repo bootstrap,Completed
+P0,Rust CLI foundation,建立 Rust 工程与公共命令面,Done,Repo bootstrap,Completed
+P0,Metadata parser,解析 frontmatter、wiki links、source_refs 并生成 page graph,Done,Rust CLI foundation,Completed
+P0,State sync,生成 source_manifest.jsonl 与 page_graph.json,Done,Metadata parser,Completed
+P0,Index rebuild,自动重建 wiki/_meta/index.md,Done,Metadata parser,Completed
+P0,Lint bridge,输出机械 lint 结果并生成语义跟进简报,Done,Metadata parser,Completed
+P0,Command tests,覆盖 init/ask/ingest/lint/rebuild-index/sync-state/recent/list,Done,Rust CLI foundation,Completed
+P1,Pilot runbook,编写真实试运行手册,Done,Docs alignment,Completed
+P1,Search scaling,编写搜索扩容门槛与方案比较文档,Done,Docs alignment,Completed
+P1,Supervised ingest v1,用 3 条真实来源跑通完整 ingest,Next,Pilot runbook,Pending user content
+P1,Question write-back,让高价值问答落盘到 questions/ 或 syntheses/,Next,Supervised ingest v1,Pending user content
+P1,Weekly lint practice,在真实知识库上执行首轮 weekly lint,Next,Question write-back,Pending user content
+P2,Hybrid search,页数扩大后接入本地 Markdown 搜索,Later,Search scaling,Pending scale trigger
+P2,Git review workflow,引入标准 commit message 与审阅流程,Later,Repo bootstrap,Pending usage

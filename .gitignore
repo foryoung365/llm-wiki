@@ -1,0 +1,10 @@
+target/
+.tmp-starter/
+
+state/*.json
+state/*.jsonl
+state/*.db
+state/*.sqlite
+state/*.sqlite3
+!state/README.md
+testcases/

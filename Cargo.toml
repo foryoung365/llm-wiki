@@ -1,0 +1,30 @@
+[package]
+name = "llmwiki"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.100"
+calamine = "0.34.0"
+camino = { version = "1.2.1", features = ["serde1"] }
+chrono = { version = "0.4.42", default-features = false, features = ["clock", "serde", "std"] }
+clap = { version = "4.5.48", features = ["derive"] }
+comrak = { version = "0.52.0", default-features = false }
+html-to-markdown-rs = "3.1.0"
+ignore = "0.4.24"
+readabilityrs = "0.1.3"
+regex = "1.12.2"
+reqwest = { version = "0.13.2", default-features = false, features = ["blocking", "brotli", "deflate", "gzip", "rustls"] }
+rs-trafilatura = "0.2.2"
+scraper = "0.26.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+serde_yaml = "0.9.34"
+undoc = "0.1.18"
+unpdf = "0.2.4"
+url = "2.5.8"
+
+[dev-dependencies]
+assert_cmd = "2.0.17"
+predicates = "3.1.3"
+tempfile = "3.23.0"

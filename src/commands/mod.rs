@@ -1,0 +1,12 @@
+pub mod convert;
+pub mod doctor;
+pub mod init;
+pub mod install;
+pub mod install_sidecar;
+pub mod lint;
+pub mod list;
+pub mod prepare_ingest;
+pub mod rebuild_index;
+pub mod recent;
+pub mod skill;
+pub mod sync_state;
